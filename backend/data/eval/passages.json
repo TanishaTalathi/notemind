@@ -1,0 +1,88 @@
+{
+  "description": "6 study passages with hand-written reference summaries, plus questions for Ask Notes. 'gold' is a phrase from the sentence that answers the question; null means the notes don't contain the answer.",
+  "passages": [
+    {
+      "id": "water-cycle",
+      "title": "The water cycle",
+      "text": "The water cycle is the continuous movement of water between the earth and the atmosphere. It is driven mainly by energy from the sun. Evaporation is the process by which water changes from a liquid into water vapour. Most evaporation takes place from oceans, seas, rivers and lakes. Plants also release water vapour through their leaves, and this process is called transpiration. Condensation is the process by which water vapour cools and changes back into tiny droplets of liquid water. These droplets collect around dust particles and form clouds. When the droplets in clouds become too heavy, they fall to the earth as precipitation. Precipitation can be rain, snow, sleet or hail, depending on the temperature. Some of the water soaks into the ground and becomes groundwater, while the rest flows into rivers and lakes as runoff. The water cycle is important because it supplies fresh water to all living things.",
+      "summary": "The water cycle is the continuous movement of water between the earth and the atmosphere, driven by the sun. Water evaporates, condenses into clouds and falls back as precipitation such as rain or snow. It is important because it supplies fresh water to all living things.",
+      "questions": [
+        {"q": "What is evaporation?", "gold": "Evaporation is the process by which water changes"},
+        {"q": "What is transpiration?", "gold": "this process is called transpiration"},
+        {"q": "How are clouds formed?", "gold": "form clouds"},
+        {"q": "What drives the water cycle?", "gold": "driven mainly by energy from the sun"},
+        {"q": "वर्षण किसे कहते हैं?", "gold": "fall to the earth as precipitation"},
+        {"q": "Who discovered the water cycle?", "gold": null}
+      ]
+    },
+    {
+      "id": "digestion",
+      "title": "The human digestive system",
+      "text": "The digestive system breaks down food into small molecules that the body can absorb. Digestion begins in the mouth, where teeth chew the food and saliva starts to break down starch. The food then passes down the oesophagus into the stomach. The stomach produces hydrochloric acid and enzymes that digest proteins. Hydrochloric acid also kills most of the bacteria present in the food. Partly digested food moves into the small intestine, which is the longest part of the digestive system. The liver produces bile, which helps to digest fats. Most nutrients are absorbed into the blood through the walls of the small intestine. The large intestine absorbs water from the remaining waste. Finally, undigested waste is removed from the body through the anus.",
+      "summary": "The digestive system breaks food into small molecules that the body can absorb. Digestion starts in the mouth, continues in the stomach with acid and enzymes, and most nutrients are absorbed in the small intestine. The large intestine absorbs water and the waste leaves the body.",
+      "questions": [
+        {"q": "Where does digestion begin?", "gold": "Digestion begins in the mouth"},
+        {"q": "What does bile do?", "gold": "The liver produces bile"},
+        {"q": "Which is the longest part of the digestive system?", "gold": "which is the longest part"},
+        {"q": "What does the large intestine absorb?", "gold": "The large intestine absorbs water"},
+        {"q": "आमाशय में हाइड्रोक्लोरिक अम्ल क्या करता है?", "gold": "Hydrochloric acid also kills"},
+        {"q": "How many teeth does an adult have?", "gold": null}
+      ]
+    },
+    {
+      "id": "french-revolution",
+      "title": "The French Revolution",
+      "text": "The French Revolution began in 1789 and changed the political history of Europe. At that time France was ruled by King Louis XVI, who had absolute power. French society was divided into three estates, and the clergy and the nobles enjoyed special privileges. The common people of the third estate paid most of the taxes but had very little say in government. Food shortages and rising bread prices made people angry. On 14 July 1789, a crowd stormed the Bastille, a prison that was a symbol of royal power. The National Assembly then issued the Declaration of the Rights of Man and of the Citizen. This document stated that all men are born free and equal in rights. In 1793 the king was executed, and France became a republic. The revolution spread the ideas of liberty, equality and fraternity across the world.",
+      "summary": "The French Revolution began in 1789 when the common people, who paid most taxes under the absolute rule of Louis XVI, rose up. The storming of the Bastille and the Declaration of the Rights of Man followed, and France became a republic. It spread the ideas of liberty, equality and fraternity.",
+      "questions": [
+        {"q": "When did the French Revolution begin?", "gold": "The French Revolution began in 1789"},
+        {"q": "What was the Bastille?", "gold": "stormed the Bastille"},
+        {"q": "Who ruled France at that time?", "gold": "King Louis XVI"},
+        {"q": "What did the Declaration of the Rights of Man state?", "gold": "all men are born free and equal"},
+        {"q": "Who paid most of the taxes?", "gold": "paid most of the taxes"},
+        {"q": "Who was Napoleon Bonaparte?", "gold": null}
+      ]
+    },
+    {
+      "id": "newton",
+      "title": "Newton's laws of motion",
+      "text": "Isaac Newton described three laws that explain how objects move. The first law states that an object stays at rest or keeps moving in a straight line unless an unbalanced force acts on it. This property of objects is called inertia. The second law states that the force on an object equals its mass multiplied by its acceleration. This means that a heavier object needs a larger force to reach the same acceleration. The third law states that for every action there is an equal and opposite reaction. A rocket moves upward because hot gases are pushed downward out of its engine. Newton's laws are used to design vehicles, bridges and machines. Friction is a force that opposes motion between two surfaces in contact.",
+      "summary": "Newton's three laws explain how objects move. The first law describes inertia, the second says force equals mass times acceleration, and the third says every action has an equal and opposite reaction. These laws are used to design vehicles, bridges and machines.",
+      "questions": [
+        {"q": "What is inertia?", "gold": "This property of objects is called inertia"},
+        {"q": "What does the second law state?", "gold": "force on an object equals its mass"},
+        {"q": "Why does a rocket move upward?", "gold": "A rocket moves upward"},
+        {"q": "What is friction?", "gold": "Friction is a force that opposes motion"},
+        {"q": "न्यूटन का तीसरा नियम क्या है?", "gold": "equal and opposite reaction"},
+        {"q": "What is the speed of light?", "gold": null}
+      ]
+    },
+    {
+      "id": "climate-change",
+      "title": "Climate change",
+      "text": "Climate change refers to long-term changes in the earth's temperature and weather patterns. Since the industrial revolution, humans have burned large amounts of coal, oil and natural gas. Burning these fossil fuels releases carbon dioxide into the atmosphere. Carbon dioxide is a greenhouse gas that traps heat near the surface of the earth. Cutting down forests also increases the amount of carbon dioxide, because trees absorb it. As a result, the average global temperature has risen by about 1.1 degrees Celsius. Rising temperatures are melting glaciers and causing sea levels to rise. Extreme weather events such as heatwaves, droughts and floods are becoming more frequent. Using renewable energy such as solar and wind power can reduce greenhouse gas emissions.",
+      "summary": "Climate change is the long-term change in the earth's temperature and weather. Burning fossil fuels and cutting forests add carbon dioxide, a greenhouse gas that traps heat, so global temperature has risen by about 1.1 °C. This melts glaciers, raises sea levels and causes more extreme weather; renewable energy can reduce emissions.",
+      "questions": [
+        {"q": "What is climate change?", "gold": "Climate change refers to long-term changes"},
+        {"q": "What does carbon dioxide do?", "gold": "greenhouse gas that traps heat"},
+        {"q": "How much has the global temperature risen?", "gold": "about 1.1 degrees"},
+        {"q": "How can we reduce greenhouse gas emissions?", "gold": "Using renewable energy"},
+        {"q": "Why does cutting forests increase carbon dioxide?", "gold": "because trees absorb it"},
+        {"q": "Which country produces the most solar power?", "gold": null}
+      ]
+    },
+    {
+      "id": "hindi-democracy",
+      "title": "लोकतंत्र (Hindi)",
+      "text": "लोकतंत्र एक ऐसी शासन व्यवस्था है जिसमें जनता अपने प्रतिनिधियों को चुनती है। भारत दुनिया का सबसे बड़ा लोकतंत्र है। भारत में हर पाँच साल में लोकसभा के चुनाव होते हैं। अठारह वर्ष या उससे अधिक आयु का हर नागरिक मतदान कर सकता है। संविधान नागरिकों को मौलिक अधिकार देता है। इन अधिकारों में समानता का अधिकार और बोलने की स्वतंत्रता शामिल है। न्यायपालिका यह सुनिश्चित करती है कि सरकार संविधान के अनुसार काम करे। लोकतंत्र में जनता की भागीदारी बहुत महत्वपूर्ण है।",
+      "summary": "लोकतंत्र वह शासन व्यवस्था है जिसमें जनता अपने प्रतिनिधि चुनती है, और भारत दुनिया का सबसे बड़ा लोकतंत्र है। अठारह वर्ष से अधिक आयु का हर नागरिक मतदान कर सकता है और संविधान नागरिकों को मौलिक अधिकार देता है।",
+      "questions": [
+        {"q": "लोकतंत्र क्या है?", "gold": "लोकतंत्र एक ऐसी शासन व्यवस्था है"},
+        {"q": "लोकसभा के चुनाव कितने साल में होते हैं?", "gold": "हर पाँच साल में"},
+        {"q": "कौन मतदान कर सकता है?", "gold": "अठारह वर्ष"},
+        {"q": "What does the judiciary ensure?", "gold": "न्यायपालिका यह सुनिश्चित करती है"},
+        {"q": "भारत के पहले प्रधानमंत्री कौन थे?", "gold": null}
+      ]
+    }
+  ]
+}

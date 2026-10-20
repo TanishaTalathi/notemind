@@ -1,0 +1,96 @@
+{
+ "dataset": "120 held-out HC3 answers (60 AI, 60 human)",
+ "headline": [
+  {
+   "label": "Accuracy",
+   "value": "97.5%",
+   "hint": "GPT-2 perplexity + style"
+  },
+  {
+   "label": "ROC AUC",
+   "value": 0.994,
+   "hint": "0.5 = guessing, 1 = perfect"
+  },
+  {
+   "label": "Median perplexity",
+   "value": "25 vs 9",
+   "hint": "human vs AI text"
+  }
+ ],
+ "tables": [
+  {
+   "title": "Detector",
+   "columns": [
+    "Model",
+    "Accuracy %",
+    "Precision %",
+    "Recall %",
+    "F1 %",
+    "AUC"
+   ],
+   "rows": [
+    [
+     "GPT-2 perplexity + style",
+     97.5,
+     96.7,
+     98.3,
+     97.5,
+     0.994
+    ],
+    [
+     "Style signals only",
+     86.7,
+     87.9,
+     85.0,
+     86.4,
+     0.935
+    ]
+   ]
+  }
+ ],
+ "matrix": {
+  "title": "Confusion matrix (GPT-2 perplexity + style)",
+  "labels": [
+   "human",
+   "AI"
+  ],
+  "values": [
+   [
+    58,
+    2
+   ],
+   [
+    1,
+    59
+   ]
+  ]
+ },
+ "bars": [
+  {
+   "title": "Accuracy",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "GPT-2 perplexity + style",
+     "value": 97.5
+    },
+    {
+     "label": "Style signals only",
+     "value": 86.7
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "“AI” is the positive class: precision = how often an “AI” verdict is right; recall = how much AI text is caught.",
+  "HC3 answers were written by ChatGPT (GPT-3.5) in 2023 and the human answers come from Wikipedia and Q&A sites. Newer chatbots, edited AI text and messy student notes are all harder, so expect lower accuracy in real use.",
+  "Detectors like this can wrongly flag careful human writers and non-native English writers. Use the result as a hint, never as proof."
+ ],
+ "suite": "ai_detection",
+ "title": "AI-written check",
+ "metric": "Accuracy · F1 · AUC",
+ "description": "Held-out human vs ChatGPT answers from the HC3 corpus (not seen during training).",
+ "ran_at": "2026-10-20T10:20:39+00:00",
+ "seconds": 49.7
+}

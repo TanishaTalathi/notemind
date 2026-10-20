@@ -1,0 +1,10 @@
+# Optional transformer models (~2-3 GB with PyTorch). Install after requirements.txt.
+# Enables: offline MarianMT translation, multilingual embeddings for "Ask your notes" and answer checking,
+# the NLI model for answer checking, GPT-2 perplexity for the AI-writing check, offline Hindi speech,
+# and (with env flags) mT5 abstractive summaries and DistilGPT-2 autocomplete.
+-r requirements.txt
+torch>=2.2
+transformers>=4.40
+sentencepiece>=0.2
+sacremoses>=0.1
+sentence-transformers>=2.7

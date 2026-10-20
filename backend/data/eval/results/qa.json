@@ -1,0 +1,134 @@
+{
+ "dataset": "35 questions on 6 passages",
+ "headline": [
+  {
+   "label": "Overall accuracy",
+   "value": "68.6%",
+   "hint": "tfidf"
+  },
+  {
+   "label": "Says “not in notes” correctly",
+   "value": "33.3%",
+   "hint": "unanswerable questions"
+  }
+ ],
+ "tables": [
+  {
+   "title": "Accuracy (%)",
+   "columns": [
+    "Retriever",
+    "Overall",
+    "Answerable",
+    "Cross-lingual",
+    "Unanswerable",
+    "ms / question"
+   ],
+   "rows": [
+    [
+     "multilingual-embeddings",
+     60.0,
+     72.4,
+     25.0,
+     0.0,
+     119
+    ],
+    [
+     "tfidf",
+     68.6,
+     75.9,
+     25.0,
+     33.3,
+     43
+    ]
+   ]
+  },
+  {
+   "title": "Mistakes (multilingual-embeddings)",
+   "columns": [
+    "Question",
+    "Expected sentence",
+    "Top source returned"
+   ],
+   "rows": [
+    [
+     "What drives the water cycle?",
+     "driven mainly by energy from the sun",
+     "The water cycle is the continuous movement of water between the earth and the atmosphere."
+    ],
+    [
+     "वर्षण किसे कहते हैं?",
+     "fall to the earth as precipitation",
+     "(said: not found)"
+    ],
+    [
+     "Who discovered the water cycle?",
+     "(not in notes)",
+     "The water cycle is the continuous movement of water between the earth and the atmosphere."
+    ],
+    [
+     "Where does digestion begin?",
+     "Digestion begins in the mouth",
+     "Partly digested food moves into the small intestine, which is the longest part of the digestive system."
+    ],
+    [
+     "आमाशय में हाइड्रोक्लोरिक अम्ल क्या करता है?",
+     "Hydrochloric acid also kills",
+     "The stomach produces hydrochloric acid and enzymes that digest proteins."
+    ],
+    [
+     "How many teeth does an adult have?",
+     "(not in notes)",
+     "Digestion begins in the mouth, where teeth chew the food and saliva starts to break down starch."
+    ],
+    [
+     "What did the Declaration of the Rights of Man state?",
+     "all men are born free and equal",
+     "The National Assembly then issued the Declaration of the Rights of Man and of the Citizen."
+    ],
+    [
+     "Who was Napoleon Bonaparte?",
+     "(not in notes)",
+     "In 1793 the king was executed, and France became a republic."
+    ],
+    [
+     "What does the second law state?",
+     "force on an object equals its mass",
+     "The first law states that an object stays at rest or keeps moving in a straight line unless an unbalanced force acts on it."
+    ],
+    [
+     "न्यूटन का तीसरा नियम क्या है?",
+     "equal and opposite reaction",
+     "Isaac Newton described three laws that explain how objects move."
+    ]
+   ]
+  }
+ ],
+ "bars": [
+  {
+   "title": "Overall accuracy",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "multilingual-embeddings",
+     "value": 60.0
+    },
+    {
+     "label": "tfidf",
+     "value": 68.6
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Answerable questions count as correct when the top source sentence is the one that holds the answer.",
+  "Unanswerable questions count as correct when the bot says the notes don't contain the answer instead of guessing.",
+  "Cross-lingual = Hindi question on English notes or the reverse. TF-IDF needs to translate the question first; embeddings match across languages directly."
+ ],
+ "suite": "qa",
+ "title": "Ask Notes",
+ "metric": "Accuracy",
+ "description": "35 questions on 6 passages, including cross-lingual and unanswerable ones. Embeddings vs TF-IDF retrieval.",
+ "ran_at": "2026-10-20T10:19:41+00:00",
+ "seconds": 12.1
+}

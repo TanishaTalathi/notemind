@@ -1,0 +1,239 @@
+{
+ "dataset": "41 graded answers to 11 questions",
+ "headline": [
+  {
+   "label": "Accuracy (3 classes)",
+   "value": "70.7%",
+   "hint": "correct / partial / incorrect"
+  },
+  {
+   "label": "Wrong answers marked correct",
+   "value": "0.0%",
+   "hint": "lower is better"
+  },
+  {
+   "label": "Spearman ρ",
+   "value": 0.742,
+   "hint": "score vs human grade"
+  }
+ ],
+ "tables": [
+  {
+   "title": "Methods",
+   "columns": [
+    "Method",
+    "Accuracy %",
+    "Wrong → “correct” %",
+    "Spearman ρ",
+    "Avg score: correct",
+    "partial",
+    "incorrect"
+   ],
+   "rows": [
+    [
+     "Embeddings + key terms + NLI (used)",
+     70.7,
+     0.0,
+     0.742,
+     73.7,
+     29.8,
+     20.5
+    ],
+    [
+     "Embeddings + key terms",
+     63.4,
+     30.8,
+     0.578,
+     80.3,
+     32.4,
+     34.7
+    ],
+    [
+     "Embeddings only",
+     63.4,
+     38.5,
+     0.499,
+     84.4,
+     35.4,
+     38.8
+    ],
+    [
+     "Key terms only",
+     36.6,
+     7.7,
+     0.368,
+     40.8,
+     18.2,
+     16.9
+    ]
+   ]
+  },
+  {
+   "title": "Disagreements with the human grade (used method)",
+   "columns": [
+    "Question",
+    "Student answer",
+    "Human grade",
+    "Checker"
+   ],
+   "rows": [
+    [
+     "What is chlorophyll?",
+     "It is the green colouring in leaves that soaks up sunlight so plants can make food.",
+     "correct",
+     "partial (41)"
+    ],
+    [
+     "What is chlorophyll?",
+     "It is green.",
+     "partial",
+     "incorrect (16)"
+    ],
+    [
+     "What is inertia?",
+     "Objects resist changes in motion.",
+     "correct",
+     "incorrect (38)"
+    ],
+    [
+     "What is inertia?",
+     "Something about objects at rest.",
+     "partial",
+     "incorrect (13)"
+    ],
+    [
+     "What is inertia?",
+     "Inertia is the force that pulls objects towards the earth.",
+     "incorrect",
+     "partial (66)"
+    ],
+    [
+     "When did the French Revolution begin?",
+     "In the eighteenth century.",
+     "partial",
+     "incorrect (12)"
+    ],
+    [
+     "What does the large intestine absorb?",
+     "It absorbs nutrients into the blood.",
+     "incorrect",
+     "partial (53)"
+    ],
+    [
+     "What does the large intestine absorb?",
+     "Water.",
+     "correct",
+     "incorrect (33)"
+    ],
+    [
+     "What causes climate change?",
+     "Pollution.",
+     "partial",
+     "incorrect (3)"
+    ],
+    [
+     "What does bile do?",
+     "It helps break down fats.",
+     "correct",
+     "partial (41)"
+    ],
+    [
+     "What does bile do?",
+     "It is made in the liver.",
+     "partial",
+     "correct (72)"
+    ],
+    [
+     "Who can vote in India?",
+     "Adults.",
+     "partial",
+     "incorrect (3)"
+    ]
+   ]
+  }
+ ],
+ "matrix": {
+  "title": "Confusion matrix (used method)",
+  "labels": [
+   "correct",
+   "partial",
+   "incorrect"
+  ],
+  "values": [
+   [
+    14,
+    2,
+    2
+   ],
+   [
+    1,
+    4,
+    5
+   ],
+   [
+    0,
+    2,
+    11
+   ]
+  ]
+ },
+ "bars": [
+  {
+   "title": "Accuracy by method (higher is better)",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "Embeddings + key terms + NLI (used)",
+     "value": 70.7
+    },
+    {
+     "label": "Embeddings + key terms",
+     "value": 63.4
+    },
+    {
+     "label": "Embeddings only",
+     "value": 63.4
+    },
+    {
+     "label": "Key terms only",
+     "value": 36.6
+    }
+   ]
+  },
+  {
+   "title": "Wrong answers accepted as correct (lower is better)",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "Embeddings + key terms + NLI (used)",
+     "value": 0.0
+    },
+    {
+     "label": "Embeddings + key terms",
+     "value": 30.8
+    },
+    {
+     "label": "Embeddings only",
+     "value": 38.5
+    },
+    {
+     "label": "Key terms only",
+     "value": 7.7
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Embeddings measure “same topic”, not “same claim”: an answer describing the opposite process can be 0.9 similar. The NLI model reads both answers together and spots contradictions, which is why far fewer wrong answers get accepted.",
+  "The weights and thresholds were tuned on this same set (leave-one-out cross-validation gave about 61% accuracy), so treat the accuracy as optimistic. Many remaining disagreements are short, vague answers where even teachers might differ.",
+  "Spearman ρ measures whether higher scores go with better human grades (1 = perfect ranking)."
+ ],
+ "suite": "answer_check",
+ "title": "Answer checking",
+ "metric": "Accuracy · Spearman ρ",
+ "description": "41 hand-graded student answers (correct / partial / incorrect), including Hindi and negated answers.",
+ "ran_at": "2026-10-20T10:19:49+00:00",
+ "seconds": 8.5
+}

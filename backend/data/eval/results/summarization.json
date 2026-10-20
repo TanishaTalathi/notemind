@@ -1,0 +1,122 @@
+{
+ "dataset": "6 passages (5 English, 1 Hindi) with reference summaries",
+ "headline": [
+  {
+   "label": "ROUGE-L (TextRank short)",
+   "value": 38.5,
+   "hint": "lead baseline 39.8"
+  },
+  {
+   "label": "ROUGE-1 (TextRank short)",
+   "value": 43.6,
+   "hint": "lead baseline 44.3"
+  }
+ ],
+ "tables": [
+  {
+   "title": "ROUGE F1 (%)",
+   "columns": [
+    "System",
+    "ROUGE-1",
+    "ROUGE-2",
+    "ROUGE-L",
+    "Avg words"
+   ],
+   "rows": [
+    [
+     "TextRank (short)",
+     43.6,
+     24.2,
+     38.5,
+     28
+    ],
+    [
+     "TextRank (detailed)",
+     49.9,
+     31.4,
+     43.8,
+     56
+    ],
+    [
+     "Lead baseline",
+     44.3,
+     29.7,
+     39.8,
+     28
+    ]
+   ]
+  },
+  {
+   "title": "Examples",
+   "columns": [
+    "Passage",
+    "Reference",
+    "TextRank (short)"
+   ],
+   "rows": [
+    [
+     "The water cycle",
+     "The water cycle is the continuous movement of water between the earth and the atmosphere, driven by the sun. Water evaporates, condenses into clouds and falls back as precipitation such as rain or snow. It is important because it supplies fresh water to all living things.",
+     "Evaporation is the process by which water changes from a liquid into water vapour. Condensation is the process by which water vapour cools and changes back into tiny droplets of liquid water."
+    ],
+    [
+     "The human digestive system",
+     "The digestive system breaks food into small molecules that the body can absorb. Digestion starts in the mouth, continues in the stomach with acid and enzymes, and most nutrients are absorbed in the small intestine. The large intestine absorbs water and the waste leaves the body.",
+     "The digestive system breaks down food into small molecules that the body can absorb. Partly digested food moves into the small intestine, which is the longest part of the digestive system."
+    ],
+    [
+     "The French Revolution",
+     "The French Revolution began in 1789 when the common people, who paid most taxes under the absolute rule of Louis XVI, rose up. The storming of the Bastille and the Declaration of the Rights of Man followed, and France became a republic. It spread the ideas of liberty, equality and fraternity.",
+     "The French Revolution began in 1789 and changed the political history of Europe. At that time France was ruled by King Louis XVI, who had absolute power."
+    ],
+    [
+     "Newton's laws of motion",
+     "Newton's three laws explain how objects move. The first law describes inertia, the second says force equals mass times acceleration, and the third says every action has an equal and opposite reaction. These laws are used to design vehicles, bridges and machines.",
+     "Isaac Newton described three laws that explain how objects move. The second law states that the force on an object equals its mass multiplied by its acceleration."
+    ],
+    [
+     "Climate change",
+     "Climate change is the long-term change in the earth's temperature and weather. Burning fossil fuels and cutting forests add carbon dioxide, a greenhouse gas that traps heat, so global temperature has risen by about 1.1 °C. This melts glaciers, raises sea levels and causes more extreme weather; renewable energy can reduce emissions.",
+     "Climate change refers to long-term changes in the earth's temperature and weather patterns. Carbon dioxide is a greenhouse gas that traps heat near the surface of the earth."
+    ],
+    [
+     "लोकतंत्र (Hindi)",
+     "लोकतंत्र वह शासन व्यवस्था है जिसमें जनता अपने प्रतिनिधि चुनती है, और भारत दुनिया का सबसे बड़ा लोकतंत्र है। अठारह वर्ष से अधिक आयु का हर नागरिक मतदान कर सकता है और संविधान नागरिकों को मौलिक अधिकार देता है।",
+     "लोकतंत्र एक ऐसी शासन व्यवस्था है जिसमें जनता अपने प्रतिनिधियों को चुनती है। संविधान नागरिकों को मौलिक अधिकार देता है।"
+    ]
+   ]
+  }
+ ],
+ "bars": [
+  {
+   "title": "ROUGE-L F1 (higher is better)",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "TextRank (short)",
+     "value": 38.5
+    },
+    {
+     "label": "TextRank (detailed)",
+     "value": 43.8
+    },
+    {
+     "label": "Lead baseline",
+     "value": 39.8
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "ROUGE measures word overlap with a reference summary: ROUGE-1 single words, ROUGE-2 word pairs, ROUGE-L the longest common word sequence.",
+  "The lead baseline (just the first sentences) is hard to beat on textbook-style text, because textbooks put the main idea first.",
+  "References are abstractive (re-worded), so an extractive system like TextRank can't reach 100."
+ ],
+ "suite": "summarization",
+ "title": "Summaries",
+ "metric": "ROUGE-1 · ROUGE-2 · ROUGE-L",
+ "description": "TextRank summaries of 6 passages compared with reference summaries, against a lead-sentences baseline.",
+ "ran_at": "2026-10-20T10:19:28+00:00",
+ "seconds": 0.1
+}

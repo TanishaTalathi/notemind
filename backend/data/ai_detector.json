@@ -1,0 +1,147 @@
+{
+ "style": {
+  "features": [
+   "sent_len_cv",
+   "ai_phrases",
+   "rare_words",
+   "shorthand",
+   "word_len",
+   "mattr",
+   "first_person"
+  ],
+  "mean": [
+   0.352995,
+   0.442475,
+   0.002318,
+   0.089212,
+   5.220586,
+   0.758219,
+   0.107648
+  ],
+  "scale": [
+   0.160632,
+   0.63557,
+   0.008851,
+   0.330104,
+   0.422194,
+   0.053369,
+   0.442948
+  ],
+  "coef": [
+   -0.357584,
+   1.636161,
+   -0.829611,
+   -0.199439,
+   -0.635019,
+   -0.568393,
+   0.090691
+  ],
+  "intercept": 0.142426,
+  "test_accuracy": 0.8679,
+  "test_precision": 0.898,
+  "test_recall": 0.8302,
+  "test_f1": 0.8627,
+  "test_auc": 0.9331,
+  "train_size": 488,
+  "test_size": 212,
+  "class_means": {
+   "human": {
+    "sent_len_cv": 0.4014,
+    "ai_phrases": 0.1224,
+    "rare_words": 0.0043,
+    "shorthand": 0.1193,
+    "word_len": 5.3354,
+    "mattr": 0.7725,
+    "first_person": 0.0691
+   },
+   "ai": {
+    "sent_len_cv": 0.3046,
+    "ai_phrases": 0.7626,
+    "rare_words": 0.0004,
+    "shorthand": 0.0591,
+    "word_len": 5.1057,
+    "mattr": 0.7439,
+    "first_person": 0.1462
+   }
+  }
+ },
+ "dataset": "HC3 (wiki_csai + open_qa), Guo et al. 2023, CC-BY-SA 4.0",
+ "full": {
+  "features": [
+   "log_ppl",
+   "ppl_std",
+   "sent_len_cv",
+   "ai_phrases",
+   "rare_words",
+   "shorthand",
+   "word_len",
+   "mattr",
+   "first_person"
+  ],
+  "mean": [
+   2.671917,
+   0.533571,
+   0.352995,
+   0.442475,
+   0.002318,
+   0.089212,
+   5.220586,
+   0.758219,
+   0.107648
+  ],
+  "scale": [
+   0.582861,
+   0.27598,
+   0.160632,
+   0.63557,
+   0.008851,
+   0.330104,
+   0.422194,
+   0.053369,
+   0.442948
+  ],
+  "coef": [
+   -3.685509,
+   1.078852,
+   -0.716438,
+   1.010877,
+   -0.804827,
+   -0.358257,
+   -0.377512,
+   0.136536,
+   0.250115
+  ],
+  "intercept": -0.295895,
+  "test_accuracy": 0.9764,
+  "test_precision": 0.972,
+  "test_recall": 0.9811,
+  "test_f1": 0.9765,
+  "test_auc": 0.996,
+  "train_size": 488,
+  "test_size": 212,
+  "class_means": {
+   "human": {
+    "log_ppl": 3.1522,
+    "ppl_std": 0.5356,
+    "sent_len_cv": 0.4014,
+    "ai_phrases": 0.1224,
+    "rare_words": 0.0043,
+    "shorthand": 0.1193,
+    "word_len": 5.3354,
+    "mattr": 0.7725,
+    "first_person": 0.0691
+   },
+   "ai": {
+    "log_ppl": 2.1917,
+    "ppl_std": 0.5316,
+    "sent_len_cv": 0.3046,
+    "ai_phrases": 0.7626,
+    "rare_words": 0.0004,
+    "shorthand": 0.0591,
+    "word_len": 5.1057,
+    "mattr": 0.7439,
+    "first_person": 0.1462
+   }
+  }
+ }
+}

@@ -1,0 +1,25 @@
+{
+  "description": "20 study-domain English-Hindi sentence pairs (hand-written references).",
+  "pairs": [
+    {"en": "Photosynthesis takes place in the chloroplasts of plant cells.", "hi": "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।"},
+    {"en": "Water boils at 100 degrees Celsius at sea level.", "hi": "समुद्र तल पर पानी 100 डिग्री सेल्सियस पर उबलता है।"},
+    {"en": "The heart pumps blood to all parts of the body.", "hi": "हृदय शरीर के सभी अंगों में रक्त पंप करता है।"},
+    {"en": "The Earth revolves around the Sun once a year.", "hi": "पृथ्वी साल में एक बार सूर्य की परिक्रमा करती है।"},
+    {"en": "Plants release oxygen into the atmosphere.", "hi": "पौधे वायुमंडल में ऑक्सीजन छोड़ते हैं।"},
+    {"en": "The Indian Constitution came into effect on 26 January 1950.", "hi": "भारतीय संविधान 26 जनवरी 1950 को लागू हुआ।"},
+    {"en": "Mahatma Gandhi led the Indian freedom movement through non-violence.", "hi": "महात्मा गांधी ने अहिंसा के माध्यम से भारतीय स्वतंत्रता आंदोलन का नेतृत्व किया।"},
+    {"en": "Rivers carry water from the mountains to the sea.", "hi": "नदियाँ पहाड़ों से समुद्र तक पानी ले जाती हैं।"},
+    {"en": "Students should revise their notes every week.", "hi": "छात्रों को हर सप्ताह अपने नोट्स दोहराने चाहिए।"},
+    {"en": "Energy can neither be created nor destroyed.", "hi": "ऊर्जा को न तो बनाया जा सकता है और न ही नष्ट किया जा सकता है।"},
+    {"en": "The Moon does not have its own light.", "hi": "चंद्रमा का अपना प्रकाश नहीं होता।"},
+    {"en": "Iron rusts when it comes in contact with air and water.", "hi": "हवा और पानी के संपर्क में आने पर लोहे में जंग लग जाता है।"},
+    {"en": "Democracy is a government of the people, by the people and for the people.", "hi": "लोकतंत्र जनता का, जनता द्वारा और जनता के लिए शासन है।"},
+    {"en": "Forests help to prevent soil erosion.", "hi": "वन मिट्टी के कटाव को रोकने में मदद करते हैं।"},
+    {"en": "The human brain controls all the activities of the body.", "hi": "मानव मस्तिष्क शरीर की सभी गतिविधियों को नियंत्रित करता है।"},
+    {"en": "Rainwater harvesting saves water for the future.", "hi": "वर्षा जल संचयन भविष्य के लिए पानी बचाता है।"},
+    {"en": "Exercise keeps the body healthy and strong.", "hi": "व्यायाम शरीर को स्वस्थ और मज़बूत रखता है।"},
+    {"en": "The monsoon brings heavy rain to India between June and September.", "hi": "मानसून जून से सितंबर के बीच भारत में भारी बारिश लाता है।"},
+    {"en": "Sound travels faster in water than in air.", "hi": "ध्वनि हवा की तुलना में पानी में तेज़ चलती है।"},
+    {"en": "The teacher explained the chapter in simple words.", "hi": "शिक्षक ने अध्याय को सरल शब्दों में समझाया।"}
+  ]
+}

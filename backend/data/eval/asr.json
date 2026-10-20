@@ -1,0 +1,101 @@
+{
+ "description": "Synthetic speech with known transcripts (best-case WER).",
+ "items": [
+  {
+   "file": "en_01.wav",
+   "language": "en",
+   "text": "Photosynthesis takes place in the chloroplasts of plant cells.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_01.wav",
+   "language": "hi",
+   "text": "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_02.wav",
+   "language": "en",
+   "text": "Water boils at 100 degrees Celsius at sea level.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_02.wav",
+   "language": "hi",
+   "text": "समुद्र तल पर पानी 100 डिग्री सेल्सियस पर उबलता है।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_03.wav",
+   "language": "en",
+   "text": "The heart pumps blood to all parts of the body.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_03.wav",
+   "language": "hi",
+   "text": "हृदय शरीर के सभी अंगों में रक्त पंप करता है।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_04.wav",
+   "language": "en",
+   "text": "The Earth revolves around the Sun once a year.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_04.wav",
+   "language": "hi",
+   "text": "पृथ्वी साल में एक बार सूर्य की परिक्रमा करती है।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_05.wav",
+   "language": "en",
+   "text": "Plants release oxygen into the atmosphere.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_05.wav",
+   "language": "hi",
+   "text": "पौधे वायुमंडल में ऑक्सीजन छोड़ते हैं।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_06.wav",
+   "language": "en",
+   "text": "The Indian Constitution came into effect on 26 January 1950.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_06.wav",
+   "language": "hi",
+   "text": "भारतीय संविधान 26 जनवरी 1950 को लागू हुआ।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_07.wav",
+   "language": "en",
+   "text": "Mahatma Gandhi led the Indian freedom movement through non-violence.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_07.wav",
+   "language": "hi",
+   "text": "महात्मा गांधी ने अहिंसा के माध्यम से भारतीय स्वतंत्रता आंदोलन का नेतृत्व किया।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  },
+  {
+   "file": "en_08.wav",
+   "language": "en",
+   "text": "Rivers carry water from the mountains to the sea.",
+   "voice": "Windows SAPI (Microsoft David/Zira)"
+  },
+  {
+   "file": "hi_08.wav",
+   "language": "hi",
+   "text": "नदियाँ पहाड़ों से समुद्र तक पानी ले जाती हैं।",
+   "voice": "MMS-TTS Hindi (facebook/mms-tts-hin)"
+  }
+ ]
+}

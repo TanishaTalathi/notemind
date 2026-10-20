@@ -1,0 +1,189 @@
+{
+ "dataset": "20 sentence pairs, both directions",
+ "headline": [
+  {
+   "label": "Best chrF",
+   "value": 84.4,
+   "hint": "mymemory en→hi"
+  },
+  {
+   "label": "Engines tested",
+   "value": 4,
+   "hint": "engine × direction"
+  }
+ ],
+ "tables": [
+  {
+   "title": "Scores",
+   "columns": [
+    "Engine",
+    "Direction",
+    "BLEU",
+    "chrF",
+    "Status"
+   ],
+   "rows": [
+    [
+     "marian-mt",
+     "en→hi",
+     23.7,
+     50.0,
+     "ok"
+    ],
+    [
+     "mymemory",
+     "en→hi",
+     70.4,
+     84.4,
+     "ok"
+    ],
+    [
+     "google",
+     "en→hi",
+     "—",
+     "—",
+     "unavailable (offline, blocked or not installed)"
+    ],
+    [
+     "marian-mt",
+     "hi→en",
+     36.7,
+     59.0,
+     "ok"
+    ],
+    [
+     "mymemory",
+     "hi→en",
+     72.1,
+     83.9,
+     "ok"
+    ],
+    [
+     "google",
+     "hi→en",
+     "—",
+     "—",
+     "unavailable (offline, blocked or not installed)"
+    ]
+   ]
+  },
+  {
+   "title": "Examples",
+   "columns": [
+    "System",
+    "Source",
+    "Reference",
+    "Output"
+   ],
+   "rows": [
+    [
+     "marian-mt en→hi",
+     "Photosynthesis takes place in the chloroplasts of plant cells.",
+     "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।",
+     "इन कोशिकाओं में पेड़ - पौधों के क्लोरोफिल्स पाए जाते हैं ।"
+    ],
+    [
+     "marian-mt en→hi",
+     "The Moon does not have its own light.",
+     "चंद्रमा का अपना प्रकाश नहीं होता।",
+     "चाँद का अपना प्रकाश नहीं है ।"
+    ],
+    [
+     "mymemory en→hi",
+     "Photosynthesis takes place in the chloroplasts of plant cells.",
+     "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।",
+     "पादप कोशिकाओं के क्लोरोप्लास्ट में प्रकाश संश्लेषण होता है।"
+    ],
+    [
+     "mymemory en→hi",
+     "The Moon does not have its own light.",
+     "चंद्रमा का अपना प्रकाश नहीं होता।",
+     "चंद्रमा का अपना प्रकाश नहीं होता है।"
+    ],
+    [
+     "marian-mt hi→en",
+     "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।",
+     "Photosynthesis takes place in the chloroplasts of plant cells.",
+     "Light is in the chlorophyll of plants in the chlorophyll environment."
+    ],
+    [
+     "marian-mt hi→en",
+     "चंद्रमा का अपना प्रकाश नहीं होता।",
+     "The Moon does not have its own light.",
+     "The moon doesn't have its light."
+    ],
+    [
+     "mymemory hi→en",
+     "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।",
+     "Photosynthesis takes place in the chloroplasts of plant cells.",
+     "Photosynthesis occurs in the chloroplasts of plant cells."
+    ],
+    [
+     "mymemory hi→en",
+     "चंद्रमा का अपना प्रकाश नहीं होता।",
+     "The Moon does not have its own light.",
+     "The moon does not have its own light."
+    ]
+   ]
+  }
+ ],
+ "bars": [
+  {
+   "title": "chrF (higher is better)",
+   "unit": "",
+   "max": 100,
+   "items": [
+    {
+     "label": "marian-mt en→hi",
+     "value": 50.0
+    },
+    {
+     "label": "mymemory en→hi",
+     "value": 84.4
+    },
+    {
+     "label": "marian-mt hi→en",
+     "value": 59.0
+    },
+    {
+     "label": "mymemory hi→en",
+     "value": 83.9
+    }
+   ]
+  },
+  {
+   "title": "BLEU (higher is better)",
+   "unit": "",
+   "max": 100,
+   "items": [
+    {
+     "label": "marian-mt en→hi",
+     "value": 23.7
+    },
+    {
+     "label": "mymemory en→hi",
+     "value": 70.4
+    },
+    {
+     "label": "marian-mt hi→en",
+     "value": 36.7
+    },
+    {
+     "label": "mymemory hi→en",
+     "value": 72.1
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "BLEU counts matching word sequences (0–100); chrF counts matching character sequences, which suits Hindi's rich word forms better.",
+  "Each sentence has a single reference translation, so a correct translation that uses different words still loses points.",
+  "Engines marked unavailable could not be reached from this network (Google is blocked here)."
+ ],
+ "suite": "translation",
+ "title": "Translation",
+ "metric": "BLEU · chrF",
+ "description": "English ⇄ Hindi on 20 study sentences, scored against hand-written reference translations.",
+ "ran_at": "2026-10-20T10:19:28+00:00",
+ "seconds": 96.7
+}

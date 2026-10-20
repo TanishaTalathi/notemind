@@ -1,0 +1,12 @@
+# Core (~250 MB): every feature works with just these
+fastapi>=0.110
+uvicorn[standard]>=0.29
+pydantic>=2.6
+python-multipart>=0.0.9  # audio uploads for voice notes
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+wordfreq>=3.1
+deep-translator>=1.11
+faster-whisper>=1.0      # voice notes (Whisper speech-to-text, no PyTorch needed)
+sacrebleu>=2.4           # BLEU / chrF on the evaluation page

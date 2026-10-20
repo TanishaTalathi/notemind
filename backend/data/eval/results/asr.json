@@ -1,0 +1,175 @@
+{
+ "dataset": "16 synthetic spoken sentences · small model",
+ "headline": [
+  {
+   "label": "WER English",
+   "value": "5.6%",
+   "hint": "lower is better"
+  },
+  {
+   "label": "WER Hindi",
+   "value": "38.4%",
+   "hint": "lower is better"
+  }
+ ],
+ "tables": [
+  {
+   "title": "Error rates (%)",
+   "columns": [
+    "Language",
+    "WER",
+    "CER",
+    "Language detected correctly"
+   ],
+   "rows": [
+    [
+     "English",
+     5.6,
+     1.1,
+     "8/8"
+    ],
+    [
+     "Hindi",
+     38.4,
+     33.2,
+     "8/8"
+    ]
+   ]
+  },
+  {
+   "title": "Transcripts",
+   "columns": [
+    "Lang",
+    "Reference",
+    "Whisper output",
+    "Detected"
+   ],
+   "rows": [
+    [
+     "en",
+     "Photosynthesis takes place in the chloroplasts of plant cells.",
+     "Photosynthesis takes place in the chloroplasts of plant cells.",
+     "en"
+    ],
+    [
+     "hi",
+     "प्रकाश संश्लेषण पौधों की कोशिकाओं के क्लोरोप्लास्ट में होता है।",
+     "प्रकाश सन्शेशन पवदों की कुषिकां के क्लो प्रास्त में होता है",
+     "hi"
+    ],
+    [
+     "en",
+     "Water boils at 100 degrees Celsius at sea level.",
+     "Water boils at 100 degrees Celsius at sea level.",
+     "en"
+    ],
+    [
+     "hi",
+     "समुद्र तल पर पानी 100 डिग्री सेल्सियस पर उबलता है।",
+     "समुद तल पर पानी खसार देखरी सेल्सियस पर उवरता है",
+     "hi"
+    ],
+    [
+     "en",
+     "The heart pumps blood to all parts of the body.",
+     "The heart pumps blood to all parts of the body.",
+     "en"
+    ],
+    [
+     "hi",
+     "हृदय शरीर के सभी अंगों में रक्त पंप करता है।",
+     "हर्दे शवरीर के सभी आमगो मेरक पंप करता है",
+     "hi"
+    ],
+    [
+     "en",
+     "The Earth revolves around the Sun once a year.",
+     "The Earth revolves around the Sun once a year.",
+     "en"
+    ],
+    [
+     "hi",
+     "पृथ्वी साल में एक बार सूर्य की परिक्रमा करती है।",
+     "पित्वी साल में एक बार सुर्ये की परिक्रमा करती है",
+     "hi"
+    ],
+    [
+     "en",
+     "Plants release oxygen into the atmosphere.",
+     "Plants release oxygen into the atmosphere.",
+     "en"
+    ],
+    [
+     "hi",
+     "पौधे वायुमंडल में ऑक्सीजन छोड़ते हैं।",
+     "अदे वायु मंदल में आक्सीजन चोर्फ रहे है।",
+     "hi"
+    ],
+    [
+     "en",
+     "The Indian Constitution came into effect on 26 January 1950.",
+     "The Indian constitution came into effect on January 26, 1950.",
+     "en"
+    ],
+    [
+     "hi",
+     "भारतीय संविधान 26 जनवरी 1950 को लागू हुआ।",
+     "बहार्तिय समद्द्भान दिजर्वी गर को लापू हूँँँई",
+     "hi"
+    ],
+    [
+     "en",
+     "Mahatma Gandhi led the Indian freedom movement through non-violence.",
+     "Mahatma Gandhi led the Indian freedom movement through nonviolence.",
+     "en"
+    ],
+    [
+     "hi",
+     "महात्मा गांधी ने अहिंसा के माध्यम से भारतीय स्वतंत्रता आंदोलन का नेतृत्व किया।",
+     "महात्मा गान्दी ने आहिंसा के माद्यम से बहार्तिये सोटन्तरता अन्दोलन का नेट्रीतो किया",
+     "hi"
+    ],
+    [
+     "en",
+     "Rivers carry water from the mountains to the sea.",
+     "Rivers carry water from the mountains to the sea.",
+     "en"
+    ],
+    [
+     "hi",
+     "नदियाँ पहाड़ों से समुद्र तक पानी ले जाती हैं।",
+     "नदिया पहारों से समुद्र तक पानी लेजाती है।",
+     "hi"
+    ]
+   ]
+  }
+ ],
+ "bars": [
+  {
+   "title": "Word error rate (lower is better)",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "WER en",
+     "value": 5.6
+    },
+    {
+     "label": "WER hi",
+     "value": 38.4
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "WER = (substituted + deleted + inserted words) / words in the reference. CER is the same on characters, which is fairer for Hindi spelling variants.",
+  "The clips are synthetic voices with no background noise, so real classroom recordings will have higher error rates.",
+  "Set NOTEMIND_WHISPER_MODEL=small for noticeably better Hindi (480 MB download); the current model is “small”."
+ ],
+ "suite": "asr",
+ "title": "Voice notes",
+ "metric": "WER · CER",
+ "description": "Whisper on 16 spoken sentences (8 English, 8 Hindi) with known transcripts.",
+ "ran_at": "2026-10-20T10:22:32+00:00",
+ "seconds": 112.9
+}

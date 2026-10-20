@@ -1,0 +1,126 @@
+{
+ "dataset": "60 snippets",
+ "headline": [
+  {
+   "label": "Accuracy",
+   "value": "96.7%",
+   "hint": "58/60 correct"
+  },
+  {
+   "label": "Macro F1",
+   "value": "96.6%",
+   "hint": "average over the 3 languages"
+  }
+ ],
+ "tables": [
+  {
+   "title": "Per language (%)",
+   "columns": [
+    "Language",
+    "Precision",
+    "Recall",
+    "F1",
+    "Examples"
+   ],
+   "rows": [
+    [
+     "en",
+     90.9,
+     100.0,
+     95.2,
+     20
+    ],
+    [
+     "hi",
+     100.0,
+     100.0,
+     100.0,
+     20
+    ],
+    [
+     "hinglish",
+     100.0,
+     90.0,
+     94.7,
+     20
+    ]
+   ]
+  },
+  {
+   "title": "Mistakes",
+   "columns": [
+    "Text",
+    "True",
+    "Predicted"
+   ],
+   "rows": [
+    [
+     "Kal test hai, chapter 4 revise kar lena.",
+     "hinglish",
+     "en"
+    ],
+    [
+     "Ashoka Maurya dynasty ke great emperor the.",
+     "hinglish",
+     "en"
+    ]
+   ]
+  }
+ ],
+ "matrix": {
+  "title": "Confusion matrix",
+  "labels": [
+   "en",
+   "hi",
+   "hinglish"
+  ],
+  "values": [
+   [
+    20,
+    0,
+    0
+   ],
+   [
+    0,
+    20,
+    0
+   ],
+   [
+    2,
+    0,
+    18
+   ]
+  ]
+ },
+ "bars": [
+  {
+   "title": "F1 per language",
+   "unit": "%",
+   "max": 100,
+   "items": [
+    {
+     "label": "en",
+     "value": 95.2
+    },
+    {
+     "label": "hi",
+     "value": 100.0
+    },
+    {
+     "label": "hinglish",
+     "value": 94.7
+    }
+   ]
+  }
+ ],
+ "notes": [
+  "Detection uses the share of Devanagari letters plus a list of Roman-script Hindi marker words (hai, ka, ko, me...).",
+  "Hinglish with very few Hindi function words is the hardest case."
+ ],
+ "suite": "language_id",
+ "title": "Language detection",
+ "metric": "Accuracy · F1",
+ "description": "60 labelled snippets in English, Hindi and Hinglish, including tricky ones.",
+ "ran_at": "2026-10-20T10:29:35+00:00",
+ "seconds": 0.0
+}
